@@ -1,0 +1,24 @@
+:root{--paper:#eef2f1;--panel:#fff;--ink:#0f2230;--mute:#5b6b76;--line:#d3dcdf;--fc:#1f6feb;--act:#0f2230;--band:#b9d3f7;--bad:#c2410c;--good:#0f766e}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Schibsted Grotesk",system-ui,sans-serif;line-height:1.45}
+.wrap{max-width:1180px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.6rem;margin:0 0 4px;letter-spacing:-.01em}
+h2{font-size:1.05rem;margin:0 0 4px}
+.sub{color:var(--mute);margin:0 0 16px;max-width:70ch}
+.bar{display:flex;flex-wrap:wrap;gap:14px;align-items:end;padding:12px 14px;background:var(--panel);border:1px solid var(--line);border-radius:6px;margin-bottom:16px}
+.bar label{display:flex;flex-direction:column;font-size:.8rem;color:var(--mute);gap:3px}
+input,select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:#fff;color:var(--ink)}
+.tabs{display:flex;gap:4px;margin-bottom:12px}
+.tabs button{font:inherit;padding:8px 14px;border:1px solid var(--line);background:transparent;border-radius:6px;cursor:pointer;color:var(--mute)}
+.tabs button[aria-selected=true]{background:var(--ink);color:#fff;border-color:var(--ink)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--fc);outline-offset:2px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin-bottom:16px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 12px}
+.kpi b{display:block;font-size:1.45rem;font-variant-numeric:tabular-nums}
+.kpi span{font-size:.8rem;color:var(--mute)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:14px;margin-bottom:16px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:16px}
+.note{font-size:.85rem;color:var(--mute);margin:4px 0 8px}
+.callout{border-left:4px solid var(--fc);background:#e6effc;padding:10px 12px;margin-bottom:16px;border-radius:0 6px 6px 0}
+.err{border-left-color:var(--bad);background:#fdebe1}
+@media (max-width:480px){.grid2{grid-template-columns:1fr}}
